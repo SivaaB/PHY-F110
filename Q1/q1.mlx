@@ -1,0 +1,5 @@
+chi = 0:0.01:2;
+eta = 1/2*chi./sqrt(1+chi.^2);
+plot(chi,eta)
+xlabel('x/h')
+title('v_B/v_A')

@@ -1,0 +1,5 @@
+eta = inline('(1 + wn*t).*exp(-wn*t)')
+t = 0:0.05:3;
+plot(t,eta(t,2),t,eta(t,4),t,eta(t,8))
+xlabel('time (sec)')
+title('non-dimensional displacement')

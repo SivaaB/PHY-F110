@@ -1,0 +1,8 @@
+theta = 0:0.05:pi/2;
+r0 = 0.1+0.6*cos(pi/4);
+r = 0.1+0.6*cos(theta/2);
+w0 = 40*2*pi/60;
+w = r0^2./r.^2*w0;
+plot(theta*180/pi, w)
+xlabel('theta (degrees)')
+ylabel('omega (rad/s)')

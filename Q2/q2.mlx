@@ -1,0 +1,9 @@
+% This script plots v1 and v2 as functions of
+% h for L = 5 m
+L = 5; g = 9.81;
+h = 0:0.01:L;
+v1 = sqrt(2*g*h.*log(L./h));
+v2 = sqrt(2*g*h.*(1+log(L./h)));
+plot(h, v1, h, v2)
+xlabel('h (m)')
+ylabel('velocity (m/s)')

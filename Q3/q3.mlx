@@ -1,0 +1,8 @@
+% This script plots the velocity of the slider
+% at C versus the initial spring stretch del
+del = -0.4:0.01:0.8;
+v = 1/10*sqrt(958-1440*del);
+plot(del,v)
+axis([-0.4 0.8 0 4])
+xlabel('initial spring stretch (m)')
+ylabel('velocity (m/s)')
